@@ -1,0 +1,40 @@
+<extends src="src/layouts/master.html">
+    <block name="template">
+      <div class="px-12 py-12 rounded bg-gray-50 ">
+        <!--[if mso]><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="width: 600px; padding: 24px 32px;"><tr><td><![endif]-->
+          <table class="w-full ">
+            <tr>
+              <td>
+           <component src="src/components/header.html">To Whom It May Concern</component>
+              </td>
+            </tr>
+            <tr>
+
+                  <td class="leading-2 bg-cool-gray-300">&zwnj;</td>
+
+            </tr>
+          </table>
+          <table class="w-full text-lg">
+            <tr>
+              <td class="px-36 pt-8">
+                @{{placeholder for content}} 
+              </td>
+            </tr>
+            <tr>
+              <td class="px-36 pt-3 pb-8">
+
+                Thank you for taking the time to email me, feel free to email me back at <a href="mailto:thighbaugh@zoho.com">thighbaugh@zoho.com</a> or <a href="mailto:admin@thomasleonhighbaugh.me">admin@thomasleonhighbaugh.me</a> or text me at <a href="tel:+15103095128">510 309 5128</a>. Additionally, you can find me on <a href="https://twitter.com/thomashighbaugh">Twitter</a> or <a href="https://linkedin.com/in/thomas-leon-highbaugh">LinkedIn</a>.
+              </td>
+            </tr>
+            <tr>
+              <td class="leading-2 bg-cool-gray-300">&zwnj;</td>
+            </tr>
+          </table>
+
+
+     <component src="src/components/footer.html"></component>
+            </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </div>
+    </block>
+  </extends>

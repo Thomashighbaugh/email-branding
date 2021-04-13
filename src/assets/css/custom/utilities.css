@@ -1,0 +1,16 @@
+.mso-leading-exactly {
+  mso-line-height-rule: exactly;
+}
+a {
+
+color: #555e70;
+text-decoration: none;
+font-weight: 700;
+}
+
+a:visited, a:hover, a:active {
+    color: #3c3f4c;
+}
+a:hover{
+    text-decoration: line-through;
+}
