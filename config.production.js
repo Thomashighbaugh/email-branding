@@ -1,24 +1,50 @@
 /*
 |-------------------------------------------------------------------------------
-| Production config           https://maizzle.com/docs/environments/#production
+| Development config               https://maizzle.com/docs/environments/#local
 |-------------------------------------------------------------------------------
 |
-| This is where you define settings that optimize your emails for production.
-| These will be merged on top of the base config.js, so you only need to
-| specify the options that are changing.
+| The exported object contains the default Maizzle settings for development.
+| This is used when you run the `maizzle build` or `maizzle serve` and it
+| has the fastest build time, since most transformations are disabled.
 |
 */
 
 module.exports = {
+    inlineCSS: {
+        styleToAttribute: {
+          'background-color': 'bgcolor',
+          'background-image': 'background',
+          'text-align': 'align',
+          'vertical-align': 'valign'
+        },
+        mergeLonghand: false,
+        applySizeAttribute: {
+          width: [],
+          height: []
+        },
+        keepOnlyAttributeSizes: {
+          width: [],
+          height: []
+        },
+        preferBgColorAttribute: false,
+        excludedProperties: null
+      },
   build: {
     destination: {
-      path: 'build_production',
-      extension: 'blade.php',
+      path: 'build_local',
+    },
+    tailwind: {
+      css: 'src/assets/css/main.css',
+    },
+    templates: {
+      root: 'src/templates',
     },
   },
 
   prettify: {
     enabled: true,
   },
+
+  inlineCSS: true
 
 }

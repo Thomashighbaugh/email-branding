@@ -1,11 +1,11 @@
 <extends src="src/layouts/master.html">
     <block name="template">
-      <div class="px-12 py-12 rounded bg-gray-50 ">
+      <div class="px-12 py-12 rounded-xl   bg-gray-50 ">
         <!--[if mso]><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="width: 600px; padding: 24px 32px;"><tr><td><![endif]-->
-          <table class="w-full ">
+          <table class="w-full text-gray-700">
             <tr>
               <td>
-           <component src="src/components/header.html">To Whom It May Concern</component>
+           <component src="src/components/header.html">@{{name}}</component>
               </td>
             </tr>
             <tr>
@@ -16,14 +16,15 @@
           </table>
           <table class="w-full text-lg">
             <tr>
-              <td class="px-36 pt-8">
-                @{{placeholder for content}} 
+              <td class="px-36 text-gray-700 pt-8">
+                @{{placeholder for content}}
               </td>
             </tr>
             <tr>
-              <td class="px-36 pt-3 pb-8">
-
-                Thank you for taking the time to email me, feel free to email me back at <a href="mailto:thighbaugh@zoho.com">thighbaugh@zoho.com</a> or <a href="mailto:admin@thomasleonhighbaugh.me">admin@thomasleonhighbaugh.me</a> or text me at <a href="tel:+15103095128">510 309 5128</a>. Additionally, you can find me on <a href="https://twitter.com/thomashighbaugh">Twitter</a> or <a href="https://linkedin.com/in/thomas-leon-highbaugh">LinkedIn</a>.
+              <td class="px-36 text-gray-700 pt-3 pb-8">
+             <button class="p-3 mt-3 mb-3 rounded-3xl ml-24 border-gray-300 border-2 border-solid bg-gray-700 w-1/4 hover:bg-gray-500">  <a class="font-black text-xl no-underline text-gray-50" href="https://twitter.com/thomashighbaugh">Twitter</a></button>
+             <button class="p-3 mt-3 mb-3 rounded-3xl border-gray-300 border-2 border-solid bg-gray-700 w-1/4 hover:bg-gray-500"> <a class="font-black text-xl no-underline text-gray-50" href="https://github.com/Thomashighbaugh">Github</a></button>
+             <button class="p-3 mt-3 mb-3 rounded-3xl border-gray-300 border-2 border-solid bg-gray-700 w-1/4 hover:bg-gray-500"> <a class="font-black text-xl no-underline text-gray-50" href="https://linkedin.com/in/thomas-leon-highbaugh">LinkedIn</a></button>
               </td>
             </tr>
             <tr>

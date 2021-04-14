@@ -10,6 +10,25 @@
 */
 
 module.exports = {
+    inlineCSS: {
+        styleToAttribute: {
+          'background-color': 'bgcolor',
+          'background-image': 'background',
+          'text-align': 'align',
+          'vertical-align': 'valign'
+        },
+        mergeLonghand: false,
+        applySizeAttribute: {
+          width: [],
+          height: []
+        },
+        keepOnlyAttributeSizes: {
+          width: [],
+          height: []
+        },
+        preferBgColorAttribute: false,
+        excludedProperties: null
+      },
   build: {
     destination: {
       path: 'build_local',
@@ -25,5 +44,7 @@ module.exports = {
   prettify: {
     enabled: true,
   },
+
+  inlineCSS: true
 
 }

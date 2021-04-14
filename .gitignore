@@ -1,4 +1,5 @@
 node_modules
+build_production
 build_local
 .vscode
 .idea
