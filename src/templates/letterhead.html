@@ -1,41 +1,41 @@
 <extends src="src/layouts/master.html">
-    <block name="template">
-      <div class="px-12 py-12 rounded-xl   bg-gray-50 ">
-        <!--[if mso]><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="width: 600px; padding: 24px 32px;"><tr><td><![endif]-->
-          <table class="w-full text-gray-700">
-            <tr>
-              <td>
-           <component src="src/components/header.html">@{{name}}</component>
-              </td>
-            </tr>
-            <tr>
+<block name="template">
+<div class="lg:px-12 py-12 rounded-xl md:px-6 sm:px-3   bg-gray-50 ">
+  <!--[if mso]><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="width: 600px; padding: 24px 32px;"><tr><td><![endif]-->
+  <table class="w-full text-gray-700">
+    <tr>
+      <td>
+        <component src="src/components/header.html">@{{name}}</component>
+      </td>
+    </tr>
+    <tr>
 
-                  <td class="leading-2 bg-cool-gray-300">&zwnj;</td>
+      <td class="leading-2 bg-gray-200">&zwnj;</td>
 
-            </tr>
-          </table>
-          <table class="w-full text-lg">
-            <tr>
-              <td class="px-36 text-gray-700 pt-8">
-                @{{placeholder for content}}
-              </td>
-            </tr>
-            <tr>
-              <td class="px-36 text-gray-700 pt-3 pb-8">
-             <button class="p-3 mt-3 mb-3 rounded-3xl ml-24 border-gray-300 border-2 border-solid bg-gray-700 w-1/4 hover:bg-gray-500">  <a class="font-black text-xl no-underline text-gray-50" href="https://twitter.com/thomashighbaugh">Twitter</a></button>
-             <button class="p-3 mt-3 mb-3 rounded-3xl border-gray-300 border-2 border-solid bg-gray-700 w-1/4 hover:bg-gray-500"> <a class="font-black text-xl no-underline text-gray-50" href="https://github.com/Thomashighbaugh">Github</a></button>
-             <button class="p-3 mt-3 mb-3 rounded-3xl border-gray-300 border-2 border-solid bg-gray-700 w-1/4 hover:bg-gray-500"> <a class="font-black text-xl no-underline text-gray-50" href="https://linkedin.com/in/thomas-leon-highbaugh">LinkedIn</a></button>
-              </td>
-            </tr>
-            <tr>
-              <td class="leading-2 bg-cool-gray-300">&zwnj;</td>
-            </tr>
-          </table>
+    </tr>
+  </table>
+  <table class="w-full text-lg">
+    <tr>
+      <td class="lg:px-36 md:px-12 sm:px-3 px-0 text-gray-700 pt-8">
+        @{{placeholder for content}}
+      </td>
+    </tr>
+    <tr>
+      <td class="px-36 text-gray-700 flex flex-row  pt-3 pb-8">
+        <button class="p-3 mt-3 mb-3 rounded-3xl  border-gray-300 border-2 border-solid bg-gray-700 w-1/4 hover:bg-gray-500">  <a class="font-black text-lg no-underline text-gray-50" href="https://twitter.com/thomashighbaugh">Twitter</a></button>
+        <button class="p-3 mt-3 mb-3 rounded-3xl border-gray-300 border-2 border-solid bg-gray-700 w-1/4 hover:bg-gray-500"> <a class="font-black text-lg no-underline text-gray-50" href="https://github.com/Thomashighbaugh">Github</a></button>
+        <button class="p-3 mt-3 mb-3 rounded-3xl border-gray-300 border-2 border-solid bg-gray-700 w-1/4 hover:bg-gray-500"> <a class="font-black text-lg no-underline text-gray-50" href="https://linkedin.com/in/thomas-leon-highbaugh">LinkedIn</a></button>
+      </td>
+    </tr>
+    <tr>
+      <td class="overflow-hidden w-full leading-2 bg-gray-200">&zwnj;</td>
+    </tr>
+  </table>
 
 
-     <component src="src/components/footer.html"></component>
-            </div>
-        <!--[if mso]></td></tr></table><![endif]-->
-      </div>
-    </block>
-  </extends>
+  <component src="src/components/footer.html"></component>
+</div>
+<!--[if mso]></td></tr></table><![endif]-->
+</div>
+</block>
+</extends>
