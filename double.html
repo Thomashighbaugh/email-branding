@@ -7,13 +7,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Do+Hyeon&amp;family=Russo+One&amp;Mitr:wght@200;300;400;500;600;700&amp;display=swap"
       rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+
+
     <script
       src="https://kit.fontawesome.com/307fcf8dda.js"
       crossorigin="anonymous"
@@ -40,7 +35,6 @@
         text-decoration: none;
         text-decoration: none;
         font-family: "Russo One", sans-serif;
-        font-size: 120%;
         padding-left: 1rem;
         padding-right: 1rem;
       }
@@ -49,7 +43,12 @@
         font-weight: 500;
         background-clip: padding-box;
         text-shadow: none !important;
-        background-image: linear-gradient(32deg, #555e70, #8b9cbe, #b2bfd9);
+        background-image: linear-gradient(
+          32deg,
+          #555e70aa,
+          #8b9cbeaa,
+          #b2bfd9aa
+        );
         border-radius: 12px;
       }
       body {
@@ -61,65 +60,74 @@
       }
       footer {
         text-align: right;
-        margin-left: 40%;
+        margin-left: 75%;
+        width: 25%;
+        background-color: #22262d66;
+        border-radius: 12px;
+        margin-top: 0.5% !important;
+        backdrop-filter: blur(30px) !important;
+
       }
+
       h1 {
         font-size: 2.5rem;
+        padding: 0.25rem;
         margin-top: 0;
         text-shadow: 0.21rem 0.2rem #8b9cbe;
         color: #f0f5ff;
         font-weight: 700;
-        background-clip: text;
-        background-color: #22262d;
+        background-clip: padding-box;
+        background-color: #22262d66;
+        margin-right: 68%;
+        border-radius: 12px;
+        font-family: "Russo One", sans-serif !important;
+
+
+
+      }
+      h1:hover {
+        background-color: #22262dbb;
+        border: #8b9cbebb 0.125rem solid;
       }
 
       h3 {
         text-shadow: 0.1rem 0.08rem #8b9cbe;
-        font-size: 1.45rem;
+        font-size: 1.65rem;
         color: #f0f5ff;
         font-weight: 700;
         background-clip: text;
         background-color: #22262d;
         margin-bottom: 1.5% !important;
+        margin-top:0 !important;
+        font-family: "Russo One", sans-serif !important;
       }
       hr {
         border-bottom: #f0f5ff solid 0.125rem;
-        margin-left: 55%;
       }
       hr:hover {
         border-bottom: #8b9cbe dashed 0.125rem;
       }
       main {
-        background: #f0f5ff;
+        background: #f0f5ffdd;
         font-family: "Do Hyeon", sans-serif;
         color: #3c3f4c;
         border-radius: 12px;
         border: 0.75rem double #72809c;
-        padding: 2rem;
+        padding: 3%;
+align-content: space-around !important;
+justify-content: space-around;
       }
 
       p {
-        margin-left: 1.75rem;
-        margin-right: 2.75rem;
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         color: #555e70;
         font-weight: 300;
-      }
-      section {
-        padding-left: 8%;
-        padding-right: 8%;
+        width: 40%;
       }
       /*************************************************************************************************************************************************/
       /**** Classes ************************************************************************************************************************************/
       /*************************************************************************************************************************************************/
-      .content-footer {
-        margin-top: 2%;
-        display: inline-flex;
-        width: 100%;
-        justify-content: space-around;
-        color: #f0f5ff;
-        text-shadow: 0.135rem 0.135rem 0.26rem #b2bfd9;
-      }
+
       .divide {
         border: 0.125rem solid #8b9cbe;
         color: #8b9cbe;
@@ -151,6 +159,25 @@
         margin-top: 0 !important;
         text-shadow: 0.08rem 0.12rem #8b9cbe !important;
       }
+      #row {
+        display: flex;
+        justify-content: space-around;
+
+      }
+      #c1 {
+        float: left;
+      }
+      #c2 {
+        float: right;
+      }
+      #empty-space {
+        margin-top: 2%;
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-around;
+        color: #f0f5ff;
+        text-shadow: 0.135rem 0.135rem 0.26rem #b2bfd9;
+      }
     </style>
     <!-- End Internal CSS Stylesheet -->
   </head>
@@ -166,9 +193,9 @@
       <hr class="divide" />
       <hr class="divide" />
       <!-- Begin Email Body -->
-      <section>
+      <div id="row">
         <!-- First Section of Main Body -->
-        <p>
+        <p id="c1">
           Quis tempore molestias impedit nobis dicta. Quisquam necessitatibus
           magnam molestiae eaque rerum cumque. Laborum aut vel doloribus
           voluptate praesentium autem omnis. Voluptas itaque vero autem et
@@ -194,12 +221,10 @@
           praesentium autem omnis. Voluptas itaque vero autem et officiis
           quisquam et autem.
         </p>
-      </section>
-      <!--Break First Section -->
+        <!--Break First Section -->
 
-      <!--Second Section -->
-      <section>
-        <p>
+        <!--Second Section -->
+        <p id="c2">
           Quis tempore molestias impedit nobis dicta. Quisquam necessitatibus
           magnam molestiae eaque rerum cumque. Laborum aut vel doloribus
           voluptate praesentium autem omnis. Voluptas itaque vero autem et
@@ -226,15 +251,16 @@
           quisquam et autem.<br />
           <br />
         </p>
-      </section>
-      <!--Break Second Section -->
-
+        <!--Break Second Section -->
+      </div>
       <!-- Begin Content Footer -->
-      <hr class="divide" />
-      <hr class="divide" />
-      <div class="content-footer"></div>
+
+      <div id="empty-space"></div>
       <!-- End Content  -->
+      <hr class="divide" />
+      <hr class="divide" />
     </main>
+    <br/>
     <footer>
       <h3>Thank you for your time,</h3>
 

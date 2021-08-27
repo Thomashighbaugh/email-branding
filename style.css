@@ -9,19 +9,14 @@ body {
   font-weight: 500;
 }
 
-.row {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  align-content:center
-}
+
 i {
   width: 96px !important;
   height: 96px !important;
 }
 
 main{
-    background: linear-gradient(-32deg, #22262d, #3c3f4c, #2f303d);
+    background: linear-gradient(-32deg, #22262daa, #3c3f4caa, #2f303daa);
     color: #e9efff;
     padding: 1.75rem;
     border-radius: 12px;
@@ -39,4 +34,27 @@ a {
 }
 a:hover{
     color: #f4f4f7;
+}
+
+table{
+  width: 100%;
+  text-align: center;
+  border: #f4f4f7aa solid 0.125rem;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-collapse: collapse;
+  font-size: 135%;
+  align-items: center;
+  align-content: center;
+}
+th, td {
+  border: #f4f4f7aa solid 0.125rem;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
