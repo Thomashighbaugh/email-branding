@@ -1,0 +1,3 @@
+[submodule "bin/resume"]
+	path = bin/resume
+	url = https://github.com/Thomashighbaugh/resume
